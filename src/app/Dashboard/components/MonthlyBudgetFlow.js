@@ -1,4 +1,5 @@
 import { ShoppingCart, Car, Home, Smartphone, DollarSign } from 'lucide-react';
+import Link from "next/link";
 
 export default function MonthlyBudgetFlow({ budgetData }) {
   const getPercentage = (spent, budget) => {
@@ -19,8 +20,8 @@ export default function MonthlyBudgetFlow({ budgetData }) {
     <div className="border-[#3E076C] border-2 px-6 py-5 rounded-lg shadow-lg">
       <div className="flex justify-between items-center mb-4">
         <p className="text-[#3E076C] text-xl font-syne font-bold">Your Monthly Budget Flow</p>
-        <button className="text-[#3E076C] font-poppins font-semibold hover:text-[#FFBF47] transition">
-          View All
+        <button className="text-[#0077CC] font-poppins font-semibold hover:text-[#FFBF47] transition">
+          <Link href="/budgeting">View All</Link>
         </button>
       </div>
 

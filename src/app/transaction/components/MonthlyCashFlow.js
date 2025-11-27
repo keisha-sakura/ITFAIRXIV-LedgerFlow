@@ -11,8 +11,8 @@ const CATEGORY_COLORS = {
 };
 
 const INCOME_SPENDING_COLORS = {
-  'Income': '#10b981',      // Green
-  'Spending': '#ef4444'     // Red
+  'Income': '#2E8B57',      
+  'Spending': '#DE5959'
 };
 
 export const MonthlyCashFlow = ({ transactions, selectedMonth }) => {
@@ -49,7 +49,7 @@ export const MonthlyCashFlow = ({ transactions, selectedMonth }) => {
   const totalSpending = Object.values(categoryTotals).reduce((sum, val) => sum + val, 0);
 
   // Income vs Spending Calculation
-  const DUMMY_INCOME = 1000000; // 1 juta per bulan
+  const DUMMY_INCOME = 1000000; 
   
   // Calculate percentage based on income
   const spendingPercentage = (totalSpending / DUMMY_INCOME) * 100;
@@ -177,7 +177,6 @@ export const MonthlyCashFlow = ({ transactions, selectedMonth }) => {
             </p>
           </div>
 
-          {/* Toggle Switch */}
           <div className="font-poppins flex items-center justify-center gap-2 bg-[#FFBF47] rounded-lg p-1">
             <button
               onClick={() => setViewMode('income-spending')}

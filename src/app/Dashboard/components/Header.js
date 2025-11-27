@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
     return (   
         <div className="flex flex-col items-center text-center">
@@ -12,11 +14,11 @@ export default function Header() {
 
              <div className="flex felx-col items-center gap-5">
                 <button className="bg-[#FFBF47] text-[#241838] font-syne px-6 py-3 rounded-full font-bold mt-5">
-                    Explore Full FLow
+                    <Link href="/transaction">Explore Full Flow</Link>
                 </button>
 
                 <button className="text-[#241838] border-[#FFBF47] border-2 font-syne px-7 py-3 rounded-full font-bold mt-5">
-                    Create Budget
+                    <Link href="/budgeting">Create Budget</Link>
                 </button>
              </div>
 

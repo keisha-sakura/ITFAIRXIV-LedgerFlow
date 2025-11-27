@@ -10,7 +10,7 @@ import transactionsData from './transactionsData';
 
 
 const TransactionFlowPage = () => {
-  const [selectedMonth, setSelectedMonth] = useState('Nov');
+  const [selectedMonth, setSelectedMonth] = useState('all');
 
   const [dashboardData, setDashboardData] = useState({
     userName: "Kiwi",
