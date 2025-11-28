@@ -6,11 +6,12 @@ export default function AIFinancialScore() {
             <p className="text-[#3E076C] text-sm font-poppins flex items-center mb-2">
                 Only display the most significant
             </p>
-            <p className="text-[#3E076C] text-sm font-poppins flex items-center">
-                Transportaion: +50%
+
+            <p className="text-[#3E076C] text-md font-poppins flex items-center">
+                Transportation: <span className="font-bold font-syne text-[#3E076C] text-2xl ml-2">+50%</span>
             </p>
-            <p className="text-[#3E076C] text-sm font-poppins flex items-center">
-                Food: -20%
+            <p className="text-[#3E076C] text-md font-poppins flex items-center">
+                Food: <span className="font-bold font-syne text-[#3E076C] text-2xl ml-2">-20%</span>
             </p>
         </div>
     );

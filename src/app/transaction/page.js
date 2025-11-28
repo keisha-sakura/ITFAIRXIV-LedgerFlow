@@ -14,7 +14,7 @@ const TransactionFlowPage = () => {
 
   const [dashboardData, setDashboardData] = useState({
     userName: "Kiwi",
-    netWorth: 100000,
+    netWorth: 15000000,
     netWorthChange: 1000000,
     netWorthChangePercent: 7.14,
     aiScore: 78,

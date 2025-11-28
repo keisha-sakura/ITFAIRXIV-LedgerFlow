@@ -55,7 +55,7 @@ export default function NavBar() {
                 </li>
 
                 <li className={pathname === "/profile" ? "bg-[#FFBF47] text-[#3E076C] px-4 py-1 rounded-full font-bold" : "bg-[#FFBF47] text-[#3E076C] px-4 py-1 rounded-full"}>
-                    <Link href="/profile">user@example.com</Link>
+                    <Link href="/profile">Keikei@gmail.com</Link>
                 </li>
                 </ul>
             </nav>

@@ -35,7 +35,7 @@ export default function MonthlyBudgetFlow({ budgetData = [] }) {
           const isOverBudget = percentage > 100;
           
           return (
-            <div key={index} className="space-y-2">
+            <div key={index} className="space-y-2 mb-4">
               <div className="flex justify-between items-center">
                 <div className="flex items-center gap-2">
                   <span className="text-[#3E076C]">{getCategoryIcon(item.category)}</span>

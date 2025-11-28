@@ -32,31 +32,7 @@ export default function View() {
     'Hobbies'
   ]);
 
-  // TODO: Replace with actual database fetch
-  // useEffect(() => {
-  //   const fetchTransaction = async () => {
-  //     const response = await fetch(`/api/transactions/${transactionId}`);
-  //     const data = await response.json();
-  //     setTransaction(data);
-  //     setNotes(data.notes);
-  //     setCategory(data.category);
-  //   };
-  //   fetchTransaction();
-  // }, [transactionId]);
-
   const handleSave = async () => {
-    // TODO: Replace with actual database update y
-    // const response = await fetch(`/api/transactions/${transaction.id}`, {
-    //   method: 'PUT',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ notes, category })
-    // });
-    // if (response.ok) {
-    //   setShowSaved(true);
-    //   setTimeout(() => setShowSaved(false), 2000);
-    // }
-
-    // For now, just update local state
     setTransaction({ ...transaction, notes, category });
     setShowSaved(true);
     setTimeout(() => {
